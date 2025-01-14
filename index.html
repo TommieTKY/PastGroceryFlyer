@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tommie's Past Grocery Flyer</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div id="site">
+        <a href="index.html">Tommie's Past Grocery Flyer</a>
+      </div>
+
+      <!-- Navigation Section -->
+      <nav id="navigation" aria-label="navigation" class="content-wrapper">
+        <ul class="menu">
+          <li id="hstarch" class="headitem"><a href="#">Starch</a>
+            <div id="starch" class="item">
+              <a href="#" class="sitem">oats</a>
+              <a href="#" class="sitem">potato</a>
+              <a href="#" class="sitem">chick_peas</a>
+            </div>
+          </li>
+          <li id="hdairy" class="headitem"><a href="#">Dairy</a>
+            <div id="dairy" class="item">
+              <a href="#" class="sitem">eggs</a>
+              <a href="#" class="sitem">milk</a>
+              <a href="#" class="sitem">yogurt</a>
+            </div>
+          </li>
+          <li id="hmeat" class="headitem"><a href="#">Meat</a>
+            <div id="meat" class="item">
+              <a href="#" class="sitem">chicken</a>
+              <a href="#" class="sitem">pork</a>
+              <a href="#" class="sitem">fish</a>
+            </div>
+          </li>
+          <li id="hvf" class="headitem"><a href="#">Veg&fruit</a>
+            <div id="vf" class="item">
+              <a href="#" class="sitem">veg</a>
+              <a href="#" class="sitem">berries</a>
+              <a href="#" class="sitem">fruits</a>
+            </div>
+          </li>
+          <li id="hother" class="headitem"><a href="#">Others</a>
+            <div id="other" class="item">
+              <a href="#" class="sitem">others</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main id="main">
+      <!-- Search Section -->
+      <div id="search">
+        <input type="text" list="itemList" id="searchOption"/>
+        <datalist id="itemList">
+        </datalist>
+        <button id="searchButton">search</button>
+      </div>
+
+      <!-- Main Heading Section -->
+      <h1></h1>
+
+      <!-- Opening Information Section -->
+      <div id="opening" class="content">
+        <h1>Don’t buy too much!</h1>
+        <h2>Please select/search any item on the top right corner to check the acceptable price!</h2>
+      </div>
+
+      <!-- Table Section -->
+      <table>
+        <thead>
+          <tr>
+            <th><label for="store">Store</label></th>
+            <th><label for="price">Price</label></th>
+            <th><label for="unit">Unit</label></th>
+            <th><label for="pu">Price/unit</label></th>
+          </tr>
+        </thead>
+        <tbody id="eggs" class="content">
+          <tr>
+            <td>NoFrills</td>
+            <td>4.88</td>
+            <td>18</td>
+            <td>0.271</td>
+          </tr>
+          <tr>
+            <td>Shoppers</td>
+            <td>3.49</td>
+            <td>12</td>
+            <td>0.291</td>
+          </tr>
+          <tr>
+            <td>FoodBasics</td>
+            <td>3.29</td>
+            <td>12</td>
+            <td>0.274</td>
+          </tr>
+        </tbody>
+
+        <tbody id="yogurt" class="content">
+          <tr>
+            <td>FoodBasics</td>
+            <td>5.77</td>
+            <td>16</td>
+            <td>0.361</td>
+          </tr>
+          <tr>
+            <td>Walmart</td>
+            <td>5.87</td>
+            <td>16</td>
+            <td>0.367</td>
+          </tr>
+        </tbody>
+
+        <tbody id="milk" class="content">
+          <tr>
+            <td>NoFrills</td>
+            <td>4.88</td>
+            <td>18</td>
+            <td>0.271</td>
+          </tr>
+        </tbody>
+
+        <tbody id="chicken" class="content">
+          <tr>
+            <td>NoFrills_legs</td>
+            <td>1.77</td>
+            <td>1</td>
+            <td>1.77</td>
+          </tr>
+          <tr>
+            <td>SunnyFoodMart_drumstick</td>
+            <td>1.49</td>
+            <td>1</td>
+            <td>1.49</td>
+          </tr>
+        </tbody>
+
+        <tbody id="fruits" class="content">
+          <tr>
+            <td>Acceptable</td>
+            <td>0.99</td>
+            <td>1</td>
+            <td>0.99</td>
+          </tr>
+          <tr>
+            <td>Walmart_orange</td>
+            <td>4.44</td>
+            <td>5</td>
+            <td>0.888</td>
+          </tr>
+          <tr>
+            <td>Walmart_apple</td>
+            <td>0.68</td>
+            <td>5</td>
+            <td>0.68</td>
+          </tr>
+        </tbody>
+
+        <tbody id="veg" class="content">
+          <tr>
+            <td>Acceptable</td>
+            <td>0.99</td>
+            <td>1</td>
+            <td>0.99</td>
+          </tr>
+          <tr>
+            <td>SunnyFoodMart_cabbage</td>
+            <td>0.57</td>
+            <td>1</td>
+            <td>0.57</td>
+          </tr>
+        </tbody>
+
+        <tbody id="potato" class="content">
+          <tr>
+            <td>NoFrills</td>
+            <td>1.77</td>
+            <td>10</td>
+            <td>0.177</td>
+          </tr>
+        </tbody>
+
+        <tbody id="chick_peas" class="content">
+          <tr>
+            <td>SunnyFoodMart</td>
+            <td>3.97</td>
+            <td>4</td>
+            <td>0.993</td>
+          </tr>
+        </tbody>
+
+        <tbody id="oats" class="content">
+          <tr>
+            <td>SunnyFoodMart</td>
+            <td>2.97</td>
+            <td>2.205</td>
+            <td>1.347</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Form Section -->
+      <form method="post">
+        <!-- Input Fields -->
+        <input type="text" id="store" name="store" />
+        <input type="number" step="any" id="price" name="price" />
+        <input type="number" step="any" id="unit" name="unit" />
+        <input type="number" step="any" id="pu" name="pu" />
+        <!-- Button Section -->
+        <div id="curd">
+          <button id="cal">Calculate</button>
+          <button id="add">Add</button>
+          <button id="edit">Edit</button>
+        </div>
+        <!-- Prompt Section -->
+        <div id="prompt"></div>
+      </form>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div id="copyright">
+        &copy; Copyright Tommie's Past Grocery Flyer, 2024.
+        <!-- background image is Designed by Freepik. -->
+      </div>
+    </footer>
+  </body>
+</html>
